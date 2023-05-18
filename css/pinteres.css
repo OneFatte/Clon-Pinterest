@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Comic Neue', cursive;
+}
+
+/* Estilos del navegador */
+#navbar-pinteres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: white;
+}
+
+#navbar-pinteres img {
+    max-height: 2rem;
+}
+
+#navbar-pinteres div {
+    padding: 1rem;
+}
+
+#navbar-pinteres .inicio,
+#navbar-pinteres .crear {
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#navbar-pinteres .inicio:hover,
+#navbar-pinteres .crear:hover {
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#navbar-pinteres .buscar {
+    width: 70%;
+}
+
+#navbar-pinteres .buscar input {
+    border: none;
+    border-radius: 100px;
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    background-color: #E9E9E9;
+}
+
+#navbar-pinteres #notifications,
+#navbar-pinteres #message,
+#navbar-pinteres #profile-img {
+    opacity: 0.5;
+}
+
+#navbar-pinteres #notifications:hover,
+#navbar-pinteres #message:hover,
+#navbar-pinteres #profile-img:hover {
+    opacity: 0.5;
+    background-color: #E9E9E9;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+/* Estilos del contenedor */
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+#content article {
+    columns: 6 200px;
+}
+
+#content .card-img {
+    position: relative;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+#content .card-img img {
+    border-radius: 20px;
+    width: 100%;
+    transition: filter 0.3s;
+}
+
+#content .card-img:hover {
+    border-radius: 20px;
+    cursor: zoom-in;
+}
+
+#content .card-img:hover img {
+    filter: brightness(60%);
+}
+
+#content .card-img .btn-save {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.8rem 0.6rem;
+    background-color: crimson;
+    color: white;
+    border-radius: 20px;
+    opacity: 0;
+    text-decoration: none;
+}
+
+#content .card-img .btn-ini {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    padding: 0.8rem 0.6rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+    opacity: 0;
+    text-decoration: none;
+}
+
+#content .card-img:hover .btn-save,
+#content .card-img:hover .btn-ini {
+    z-index: 10;
+    opacity: 1;
+}
+
+.formulario {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 600px;
+}
+
+.separador {
+    display: flex;
+    width: 90vw;
+    gap: 15px;
+}
+
+.separador hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.section-inputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label span {
+    font-weight: 700;
+}
+
+label input {
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+label input:hover,
+input:focus {
+    background-color: white;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 2px crimson;
+}
+
+label.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox span {
+    font-weight: 400;
+}
+
+.submit-btn {
+    background-color: crimson;
+    color: white;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    opacity: 0.7;
+}
